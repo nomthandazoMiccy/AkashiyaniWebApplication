@@ -336,6 +336,7 @@
     <Content Include="images\wreath.png" />
     <Content Include="images\x-men.png" />
     <Content Include="Login.aspx" />
+    <Content Include="LogOut.aspx" />
     <Content Include="Premium.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -353,6 +354,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
     </Compile>
     <Compile Include="Premium.aspx.cs">
       <DependentUpon>Premium.aspx</DependentUpon>

@@ -11,7 +11,36 @@ namespace testing
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
+        public string userNameText
+    {
+        get
+        {
+                return username.Text;
+        }
+        set
+        {
+            username.Text = value;
+            
+        }
+    }
+    public LinkButton loginButton
+    {
+        get
+        {
+            return this.LinkButton1;
+        }
+        
+        
+    }
+    public LinkButton LogOutbt
+    {
+        get
+        {
+            return this.LinkButton2;
+        }
+    }
+
     }
 }

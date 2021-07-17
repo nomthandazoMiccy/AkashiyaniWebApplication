@@ -26,7 +26,7 @@ namespace testing
             MySqlDataReader reader = cmd.ExecuteReader();
             if (reader.Read())
             {
-                Session["User"] = username.Text.Trim();
+                Session["User"] = reader.GetString(2);
                 Response.Redirect("homepage.aspx");
             }
             else

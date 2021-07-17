@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Configuration;
+using System.Data.SqlClient;
+
 
 namespace testing
 {
@@ -11,7 +15,18 @@ namespace testing
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["User"] != null)
+            {
+               
+                Master.userNameText = "Welcome " + Session["User"] + " ";
+                Master.LogOutbt.Visible = true;
+                Master.loginButton.Visible = false;
+            }
+            else
+            {
+                Master.LogOutbt.Visible = false;
+                Master.loginButton.Visible = true;
+            }
         }
     }
 }

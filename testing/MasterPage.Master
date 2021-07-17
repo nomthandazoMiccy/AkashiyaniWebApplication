@@ -70,7 +70,13 @@
           <li><a href="#"><span>About us</span></a></li>
           <li><a href="Premium.aspx">Premiums</a></li>
           <li><a href="">Contact</a></li>
-          <li><a href="Login.aspx">Login/Register</a></li>
+		  <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Login.aspx">Login/Register</asp:LinkButton>
+		  <li>
+		  <a href="#" >
+		   <asp:Label ID="username" runat="server"></asp:Label>
+		  </a>
+		  </li>
+		  <asp:LinkButton ID="LinkButton2" runat="server" Visible="false" PostBackUrl="~/LogOut.aspx">LogOut</asp:LinkButton>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

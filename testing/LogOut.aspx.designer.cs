@@ -11,21 +11,16 @@ namespace testing
 {
 
 
-    public partial class HomePage
+    public partial class LogOut
     {
 
         /// <summary>
-        /// Master property.
+        /// HyperLink1 control.
         /// </summary>
         /// <remarks>
-        /// Auto-generated property.
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        public new testing.Site1 Master
-        {
-            get
-            {
-                return ((testing.Site1)(base.Master));
-            }
-        }
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }
