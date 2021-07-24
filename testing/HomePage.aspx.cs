@@ -18,7 +18,7 @@ namespace testing
             if (Session["User"] != null)
             {
                
-                Master.userNameText = "Welcome " + Session["User"] + " ";
+                Master.userNameText = "Hi " + Session["User"] + " ";
                 Master.LogOutbt.Visible = true;
                 Master.loginButton.Visible = false;
             }
