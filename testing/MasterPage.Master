@@ -72,7 +72,7 @@
 		  </a>
 		  </li>
           <li><a href="homepage.aspx" class="active">Home</a></li>
-          <li><a href="#"><span>About us</span></a></li>
+          <li><a href="AboutUs.aspx"><span>About us</span></a></li>
           <li><a href="Premium.aspx">Premiums</a></li>
           <li><a href="">Contact</a></li>
 		  <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Login.aspx">Login/Register</asp:LinkButton>
