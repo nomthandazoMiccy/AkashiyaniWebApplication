@@ -338,10 +338,10 @@
     <Content Include="Login.aspx" />
     <Content Include="LogOut.aspx" />
     <Content Include="Payment.aspx" />
+    <Content Include="Payment2.aspx" />
     <Content Include="Premium.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HomePage.aspx.cs">
@@ -372,6 +372,13 @@
     <Compile Include="Payment.aspx.designer.cs">
       <DependentUpon>Payment.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Payment2.aspx.cs">
+      <DependentUpon>Payment2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment2.aspx.designer.cs">
+      <DependentUpon>Payment2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Premium.aspx.cs">
       <DependentUpon>Premium.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -393,13 +400,6 @@
     </Compile>
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -36,7 +36,7 @@
                     </div>
                     <div class="card-body" style="height: 400px">
                         <div class="form-group"> <label for="cc-number" class="control-label">CARD NUMBER</label> <input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" required> </div>
-                        <div class="form-group"> <label for="numeric" class="control-label">CARD HOLDER NAME</label> <input id="cc-numbers"  class="input-lg form-control" placeholder ="Ms N Smith"> </div>
+                        <div class="form-group"> <label for="numeric" class="control-label">CARD HOLDER NAME</label> <input id="cc-numbers"  class="input-lg form-control" placeholder ="Ms N Smith" required> </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group"> <label for="cc-exp" class="control-label">CARD EXPIRY</label> <input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="•• / ••" required> </div>
