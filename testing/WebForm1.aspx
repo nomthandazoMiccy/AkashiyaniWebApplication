@@ -1,34 +1,37 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="testing.Registration" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="testing.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <style>
-body1 {
+        body {
     font-size: 14px;
-   line-height: 1.8;
+    line-height: 1.8;
     color: #222;
     font-weight: 400;
     font-family: 'Montserrat';
     background-image: url("images/fog-3622519_1920.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     padding: 115px 0;
 }
 
-  .container1 {
-                
+
+  .container {
                 width: 660px;
                 position: relative;
-                margin: 0 auto;
+                 margin: 0 auto; 
+
      }
 
  .signup-content {
              background: #fff;
              border-radius: 10px;
-             padding: 50px 85px;
+             padding: 50px 85px; 
 
  }
 
@@ -46,7 +49,7 @@ body1 {
             border: 1px solid #ebebeb;
             border-radius: 5px;
             padding: 17px 20px;
-           box-sizing: border-box;
+            box-sizing: border-box;
             font-size: 14px;
             font-weight: 500;
             color: #222;
@@ -135,31 +138,35 @@ body1 {
 }
 
 
-</style>
+    </style>
         
 <body>
-    <div class="body1">
+
+    
+    <div class="main">
+
         <section class="signup">
-            <div class="container1">
+         
+            <div class="container">
                 <div class="signup-content">
-                    <form method="POST" id="signup-form">
-                        <h2 >Create account</h2>
+                    <form method="POST" id="signup-form" class="signup-form">
+                        <h2 class="form-title">Create account</h2>
                         <div class="form-group">
-                            <input type="email" class="form-input" name="name" id="name" placeholder="Your Name"/>
+                            <input type="text" class="form-input" name="name" id="name" placeholder="Your Name"/>
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-input" name="email" id="email" placeholder="Your Email"/>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-input" name="password" id="password" placeholder="Password"/>
+                            <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                         <div class="form-group">
                             <input type="password" class="form-input" name="re_password" id="re_password" placeholder="Repeat your password"/>
                         </div>
                         <div class="form-group">
-                      <asp:CheckBox ID="CheckBox1" runat="server" Text="Terms & Condition" CssClass="agree-term"></asp:CheckBox>
-                            <%--<input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>--%>
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                         </div>
                         <div class="form-group">
                             <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
@@ -180,6 +187,8 @@ body1 {
                 </div>
             </div>
         </section>
-        </div>
+
+    </div> 
+
 </body>
-</asp:Content>
+</html>
