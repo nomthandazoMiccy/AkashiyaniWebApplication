@@ -57,9 +57,10 @@ body1 {
             color: #555;
             font-weight: 500;
             text-align: center;
-            margin-top: 91px;
-            margin-bottom: 5px;
-
+            padding:60px 0px;
+            /*margin-top: 91px;*/
+/*            margin-bottom: 5px;
+*/
 }
 
 .loginhere-link {
@@ -157,7 +158,7 @@ body1 {
                             <input type="password" class="form-input" name="re_password" id="re_password" placeholder="Repeat your password"/>
                         </div>
                         <div class="form-group">
-                      <asp:CheckBox ID="CheckBox1" runat="server" Text="Terms & Condition" CssClass="agree-term"></asp:CheckBox>
+                            <asp:CheckBox ID="CheckBox1" runat="server" Text="Terms & Condition" TextAlign="Left"></asp:CheckBox>
                             <%--<input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                             <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>--%>
                         </div>
@@ -165,10 +166,11 @@ body1 {
                             <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
                         
                         </div>
-                    </form>
-                    <p class="loginhere">
+                        <p class="loginhere">
                         Have already an account ? <a href="#" class="loginhere-link">Login here</a>
                     </p>
+                    </form>
+                    
                         <div class="gold-block">
                                     <a href="#" class="fa fa-facebook"></a>
                                     <a href="#" class="fa fa-twitter"></a>
